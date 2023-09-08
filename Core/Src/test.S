@@ -5,9 +5,10 @@
     .type    test1, %function
 test1:
 
-	ldr r0, =0xf339d840
-	ldr r2, =0x0
-    adds r0, r0, r2
+	mov r8, sp
+	ldr r9, =0x800080
+	ldr r4, =0x8080b7ff
+    sxtab16 r8, r9, r4, ror #8
 
     nop
     nop
