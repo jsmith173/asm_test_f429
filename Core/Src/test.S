@@ -7,7 +7,7 @@ test1:
 
     ldr sp,=0x200006A4
 
-	ldr r0,=0xfe
+	ldr r0,=0x12345678
 	push {r0}
 
 	ldr r0,=0x00
